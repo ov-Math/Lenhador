@@ -1,0 +1,58 @@
+<html>
+
+<head>
+	<title>Lenhador v1.3</title>
+	<meta charset="utf-8">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/ghost.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- JS IMPORT -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+<!-- JS END -->
+
+
+<div class="ghostblock" style="height: 90%">
+	<div class="ghostcentered">
+		<form action="/result" method="get">
+			<table style="width:100%">
+			<tr>
+				<td><img src="images/lenhador_icon.png" width="100%" height="100%"></td>
+				<td><b><p style="font-family: 'Oswald', cursive; font-size: 32;">Lenhador v1.3</p></b></td>
+			</tr>
+			<tr>
+				<td colspan="2"><i><p class="text-muted" style="text-align: center">Confie em quem sabe usar Machado!</p></i></td>
+			</tr>
+			<tr>
+				<td><b><p style="font-family: 'Open Sans', cursive;">Buscar por:<p></b></td>
+				<td><input type="text" name="site_query" class="form-control"></td>
+			</tr>
+			<tr>
+				<td><b><p style="font-family: 'Open Sans', cursive;">Buscar em:</p></b></td>
+				<td>
+				<select name="where">
+					<option value="content">Conteúdo</option>
+					<option value="bookname">Título</option>
+					<option value="year">Ano</option>
+				</select>
+				</td>
+			</tr>
+			<tr><td></td><td><input type=submit value="BUSCAR" class="btn btn-danger"></td></tr>
+			</table>
+		</form>
+	</div>
+</div>
+
+<footer class="footer" style="background-color: #F5F5F5;">
+	<div class="container">
+	<p class="text-muted" style="font-family: 'Open Sans', cursive;">Desenvolvido por: Matheus Vasconcellos</p>
+	</div>
+</footer>
+</body>
+
+</html>
