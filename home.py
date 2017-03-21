@@ -1,7 +1,7 @@
-from flask import Flask
+from flask import Flask, request, render_template
 from busca import busca
 
-app = Flask("lenhador")
+app = Flask("lenhador", static_url_path = "", static_folder = "static")
 
 @app.route('/')
 def index():
@@ -16,6 +16,6 @@ def result():
         results = busca(site_query, where)
         return render_template('result.html', results=results)
     else:
-	return 500
+        return 500
 
 app.run()
